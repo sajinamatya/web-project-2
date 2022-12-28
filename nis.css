@@ -1,0 +1,94 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: black ; */
+    background-image: url('nis.png');
+    /* background-size: cover; */
+    background-attachment: fixed;
+    /* background-repeat: space; */
+    /* background-position: 10px 20px 30px; */
+    
+    
+}
+h3{
+    margin: auto;
+    right: 50px;
+}
+.left{
+   border: 2px solid red;
+   display: inline-block;
+   top: 20px;
+   left: 30px;
+   position: absolute;
+   
+
+    
+}
+.logo{
+    width: 100%;
+    height: 80px;
+}
+
+.center{
+   /* border: 2px solid blue;*/
+    display: absolute;
+    width: 50%;
+    margin: 20px auto;
+   
+    
+}
+.navbar{
+    text-align: center;
+    display: inline block;
+    /* text-decoration: none; */
+    list-style: none;
+    /* text-transform: uppercase; */
+    
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 10px;
+   
+    
+}
+.navbar li a{
+    color: rgb(12, 78, 158);
+    text-decoration: none;
+    padding: 10px 28px;
+    text-shadow: 5px white;
+    border: 2px solid rgb(107, 232, 213);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+}
+  li :hover{
+    background-color:rgb(164, 142, 243) ;
+    color: rgb(57, 12, 223);
+    text-shadow: 5px white;
+    /* background: black; */
+}
+.active:active{
+    
+    color: black;
+}
+.nonactive:hover{
+    
+    color: black;
+    text-shadow: 5px white;
+}
+
+.right{
+    top: 10px;
+    right: 30px;
+    position: fixed;
+    padding: 10px 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+}
+.searchbutton{
+    color: #0de8c0;
+    
+}
+
+
