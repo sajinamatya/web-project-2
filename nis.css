@@ -33,10 +33,7 @@ body{
     background-image: url('nis.png');
 }
 
-h3{
-    margin: auto;
-    right: 50px;
-}
+
 .logo{
   
     left: 30px;
@@ -51,19 +48,18 @@ h3{
 
 .center{
    /* border: 2px solid blue;*/
-    display: absolute;
-    width: 50%;
-    margin: 20px auto;
+    
+    width: 100%;
+    margin:20px auto;
    
     
 }
 .navbar{
-    
-    text-align: center;
+    margin-left: 250px;
+    text-align: left;
     display: inline block;
-    /* text-decoration: none; */
     list-style: none;
-    /* text-transform: uppercase; */
+    
     
 }
 .navbar li{
@@ -74,12 +70,13 @@ h3{
     
 }
 .navbar li a{
-    
+ 
     color:#333421;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 5px 5px;
     text-shadow: 5px white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
    
 }
 
