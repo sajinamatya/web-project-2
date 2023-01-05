@@ -7,8 +7,6 @@ Introduction to information system
 
 
 
-
-
 ![image](https://user-images.githubusercontent.com/66240249/209840999-0f0f77a8-b68e-4f27-b6f2-54adb0dd0f5b.png)
 
 
