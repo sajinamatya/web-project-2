@@ -1,27 +1,24 @@
-body{
+body{                   /* for whole body of a page*/
     height: 100%;
     width: 100%;
     margin: 0;
     padding:0;
 }
-.headingword{
-    font-weight: 90px;
-}
-.main,.second-main,.third-main{
+
+.main,.second-main,.third-main, .four-main,.fifth-main{
     width:100%;
     height:100vh;
     background-size:cover;
-    background-position:30% 30%;
+    background-position:10% 30%;
     overflow:hidden;
     background-attachment : fixed;    
 }
 
 
-.logo{
+.logo{                /* for logo of a web page */ 
   
     left: 30px;
    display: inline-block;
-   
    position: absolute;
    border-radius: 50px;
    
@@ -37,7 +34,7 @@ body{
    
     
 }
-.navbar{
+.navbar{                      /* for navigation bar  of a webpage*/ 
     margin-left: 250px;
     text-align: left;
     display: inline block;
@@ -45,7 +42,7 @@ body{
     
     
 }
-.navbar li{
+.navbar li{                  /* for item in a list of navigation bar */ 
     display: inline-block;
     font-size: 20px;
     padding: 0px 20px;
@@ -63,12 +60,12 @@ body{
    
 }
 
-.active {
+.active {                                   /* for active page of a site*/ 
     border-bottom: 2px solid #f49c04;
 
 }
 
-  li :hover{
+  li :hover{                         /* hover effect when the cursor is pointed at the list item */ 
     
     border-bottom: 2px solid #f49c04;
     text-shadow: 5px white;
@@ -78,7 +75,7 @@ body{
 
 
 
-.signup{
+.signup{                                          /* signup class */ 
     top: 10px;
     right: 30px;
     position: absolute;
@@ -86,52 +83,62 @@ body{
   
     
 }
-.signup-button,.login-button{
+.signup-button,.login-button{                       /* combine css for sign up and login button*/ 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f49c04;
     width: 90px;
     height: 40px;
     color:#333421;
-    border:1px solid #f49c04;
+    border:1px solid #f49c04;           /* for creating border in buttom*/
      border-radius: 15px; /*for creating the curvature in corner of the button */
      
     
     transition: ease-in-out 0.2s;
    
 }
-.login-button:hover{
-    border:1px solid #d9dc5a;
-    background-color: #d9dc5a;
+.login-button:hover{                                /* hover effect in login button*/ 
+    border:1px solid #d9dc5a;                   /* border color is changed in hover effect for login button*/ 
+    background-color: #d9dc5a;                  /* background color is changed in hover effect for login button */ 
  
   
 }
-.signup-button:hover{
-    border:1px solid #d9dc5a;
-    background-color: #d9dc5a;
+.signup-button:hover{                   /* hover effect in sign up button*/ 
+    border:1px solid #d9dc5a;       /* border color is changed in hover effect for sign up button*/ 
+    background-color: #d9dc5a;     /* background color is changed in hover effect for sign up button*/ 
  
   
 }
 
-.first-container{       /* for the flex container in second page */ 
+.first-container,.second-container{       /* for the flex container in second page */ 
     margin-top: 100px;
     width: 100%;
     height: 400px;
-    display: flex;
+    display: flex;          /* parent class for including flex box*/ 
    
 
 
 }
+/* second, third fourth and fifth page of a site main class*/ 
 .second-main{
         background-color:#333421 ;
 }
 .third-main{
     background-color: #414501;
 }
-.first-container>div{
-margin:60px;
-height: 250px;
+.four-main{
+    background-color: #bfc483;
+}
+.fifth-main{
+    background-color: #414501;
+}
 
-flex: 33.3%;
+
+.first-container>div,.second-container>div{         
+box-shadow: 0 8px 16px 0 #f49c04;
+margin:60px;
+height: 350px;
+
+flex: 33.3%;                    /*specifying the flex percent for a child container*/ 
 border:3px solid #f49c04;
 border-radius: 70px;
 
@@ -139,3 +146,97 @@ border-radius: 70px;
 .first-container>div:hover{
     background-color: #e5e78d;
 }
+
+.profile-section{      
+    margin: 40px;
+    border: 2px solid #333421;
+    height: 600px;
+    display: flex;   /*for flex box*/ 
+    box-shadow: 0 8px 16px 0 #333421;
+    flex-wrap: wrap;
+    
+}
+.profile-section > div{
+    flex: 10%;
+    height: 180px;
+    border: 2px solid #333421;
+    border-radius:50%;
+    margin: 40px;
+    margin-top: 140px;
+}
+.footer-content{            /* styling for footer content of a webpage*/
+ width: 100%;
+ height:400px;
+ background-color: #333421;
+ border-top:2px solid
+  #f49c04;
+display: flex; /*implementation of a flex box */ 
+flex-wrap: no-wrap;
+}
+
+.footer-content>div{
+  
+    flex :10%;
+    
+    margin: 10px;
+    background-color:#333421;
+}
+.copyright-part{
+    font-size: 15px;
+    width: 100%;
+    height: 60px;
+    background-color: #d9dc5a;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form{
+    margin:60px 0px 0px 60px;
+    width: 40%;
+    height: 600px;
+    border: 2px solid #f49c04;
+    padding-left: 30px;
+    border-radius:40px ;
+    background-color: #bfc483;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#feedback-t{
+    width: 80%;
+    height: 100px;
+    border: 1px solid #f49c04;
+    border-radius:20px;
+    padding: 8px;
+    font-size: 15px;
+}
+input[type=text] {
+    width: 80%;
+    height: 30px;
+    border: 1px solid #f49c04;
+    background-color: #eeefe2;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 8px;
+
+}
+input[type=text]:focus{
+    background-color: #dbdc8e;
+   
+
+}
+input[type=submit]{
+    width: 100px;
+      background-color: #f49c04;
+      border-style: none;
+      padding:10px;
+      cursor:pointer;
+      font-size: 15px;
+      border-radius: 20px;
+      
+}
+input[type=submit]:hover{
+  background-color: #d9dc5a;
+}
+
+
