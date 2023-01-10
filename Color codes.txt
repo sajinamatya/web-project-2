@@ -1,7 +1,7 @@
 color codes
 
 darkest green
-#333421
+#4f6228
 
 white
 #eeefe2
