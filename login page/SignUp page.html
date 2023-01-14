@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <link type="text/css" rel="stylesheet" href="signup.css">
+  
+</head>
+<body>
+  <div class="signup-container">
+  <h2>Create Account</h2>
+  <form>
+    
+    <input type="text" placeholder="First Name" id="firstname" name="firstname"><br><br>
+    <input type="text" placeholder="Last Name" id="lastname" name="lastname"><br><br>
+
+     <input type="text" placeholder="Email address" id="email" name="email">
+     <br><br>
+
+    <input type="password" placeholder="New Password" id="pass1" name="pass1">
+    <br><br>
+
+    <input type="password" placeholder="Confirm Password" id="pass2" name="pass2">
+    <br><br>
+
+    <b>Gender :</b>
+    <br>
+            
+                <input type="radio" name="gender" value="male" checked>Male
+            
+                <input type="radio" name="gender" value="female" checked>Female
+                <br><br>
+
+   <b>Date of birth</b> 
+    <br>
+    <input type="date">
+    
+    <br>
+        
+
+   <p> <button onclick="valid()" style="border: 2px solid #f49c04; width:100px; height:40px; border-radius:40px;
+    background-color:#f49c04">Sign Up</button>
+    &nbsp; &nbsp; <a href="SignIn page.html" style="text-decoration: none;">Already have account?</a>
+  </form>
+
+  
+  
+  <p> <h5> By clicking the signup form you will accept our terms and condition.  </h5> </p>
+  </div>
+  <script src="dob.js"></script> 
+
+  <script>
+    
+  function valid()
+   {
+    var Fname = document.getElementById("firstname").value;
+    var Lname = document.getElementById("lastname").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("pass1").value;
+    var Cpassword = document.getElementById("pass2").value;
+    
+    
+    if (Fname == "" && Lname == "" && email == "" && password == "" && Cpassword == "")
+     {
+      alert("Incorrect formate please try again");
+     } 
+    else if(password !== Cpassword)
+    {
+     alert("Please enter correct password");
+     }
+     else
+     {
+      alert("Account created successfully")
+     }
+   }
+
+  </script>
+  
+</body>
+</html>
+
