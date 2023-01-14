@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color:#738334;
+            
+          }
+          
+        input[type=text],input[type=password]{
+            width: 300px;
+            height: 40px;
+            background-color: #d9dc5a;
+            border-radius: 40px;
+            padding-left:20px;
+            border:2px solid #f49c04  ;
+            
+          }
+          .signin-container{
+            margin:0 auto;
+            margin-top: 30px;
+            width: 50%;
+            
+            height: 700px;
+            background-image: url("1.png");
+            background-size: 900px;
+            background-position:40% 20%;
+            background-repeat:no-repeat ;
+             border: 4px solid #f49c04;
+             padding-left: 40px;
+             border-radius: 40px;
+             box-shadow: 5px 5px  #f49c04;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           background-color:#eaeebf;
+           text-align: center;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+    <h1>Bonsai</h1>
+
+<form>
+    
+    <h3>Log into bonsai</h3>
+    
+    <input type="text" placeholder="Email address" id="email" name="email">
+    <br><br>
+
+    <input type="password" placeholder=" Password" id="pass" name="pass1">
+    <br><br>
+
+    <button onclick="valid()" style="border: 2px solid #f49c04; width:100px; height:40px; border-radius:40px;
+    background-color:#f49c04">
+    Login</button>
+    <br><br>
+
+    
+ <button style="border: 2px solid#738334 ; width:200px; height:40px; border-radius:40px;
+ background-color:#738334"><a href="SignUp page.html"style="text-decoration:none; color:black;">Create New Account</a></button>
+    
+</form>
+</div>
+<script>
+    function valid()
+    {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("pass").value;
+
+        if (email == "" && password == "")
+        {
+            alert("Incorrect format please try again");
+        }
+        else
+        {
+            alert("Successfully logged in");
+        }
+    }
+</script>
+</body>
+</html>
