@@ -3,11 +3,12 @@ body{                   /* for whole body of a page*/
     width: 100%;
     margin: 0;
     padding:0;
+    background-color: rgb(255, 255, 255);
 }
 
 .main,.second-main,.third-main, .four-main,.fifth-main{
     width:100%;
-    height:100vh;
+    height:200vh;
     background-size:cover;
     background-position:10% 30%;
     overflow:hidden;
@@ -16,8 +17,8 @@ body{                   /* for whole body of a page*/
 
 
 .logo{                /* for logo of a web page */ 
-  
-    left: 30px;
+    top: -6px;
+    left: 10px;
    display: inline-block;
    position: absolute;
    border-radius: 50px;
@@ -35,7 +36,7 @@ body{                   /* for whole body of a page*/
     
 }
 .navbar{                      /* for navigation bar  of a webpage*/ 
-    margin-left: 250px;
+    margin-left: 380px;
     text-align: left;
     display: inline block;
     list-style: none;
@@ -80,6 +81,7 @@ body{                   /* for whole body of a page*/
     right: 30px;
     position: absolute;
     padding: 10px 10px;
+    cursor: pointer;
   
     
 }
@@ -91,20 +93,20 @@ body{                   /* for whole body of a page*/
     color:#333421;
     border:1px solid #f49c04;           /* for creating border in buttom*/
      border-radius: 15px; /*for creating the curvature in corner of the button */
-     
+     cursor: progress;
     
     transition: ease-in-out 0.2s;
    
 }
 .login-button:hover{                                /* hover effect in login button*/ 
-    border:1px solid #d9dc5a;                   /* border color is changed in hover effect for login button*/ 
-    background-color: #d9dc5a;                  /* background color is changed in hover effect for login button */ 
+    border:1px solid #000000;                   /* border color is changed in hover effect for login button*/ 
+    background-color: rgba(0, 0, 0, 0.561);                  /* background color is changed in hover effect for login button */ 
  
   
 }
 .signup-button:hover{                   /* hover effect in sign up button*/ 
     border:1px solid #d9dc5a;       /* border color is changed in hover effect for sign up button*/ 
-    background-color: #d9dc5a;     /* background color is changed in hover effect for sign up button*/ 
+    background-color: #ffc40089;     /* background color is changed in hover effect for sign up button*/ 
  
   
 }
@@ -120,7 +122,7 @@ body{                   /* for whole body of a page*/
 }
 /* second, third fourth and fifth page of a site main class*/ 
 .second-main{
-        background-color:#333421 ;
+        background-color:#fffffd ;
 }
 .third-main{
     background-color: #414501;
@@ -137,8 +139,8 @@ body{                   /* for whole body of a page*/
 box-shadow: 0 8px 16px 0 #f49c04;
 margin:60px;
 height: 350px;
-
-flex: 33.3%;                    /*specifying the flex percent for a child container*/ 
+/* specifying the flex percent for a child container  */
+flex: 33.3%;                    
 border:3px solid #f49c04;
 border-radius: 70px;
 
@@ -238,5 +240,4 @@ input[type=submit]{
 input[type=submit]:hover{
   background-color: #d9dc5a;
 }
-
 
