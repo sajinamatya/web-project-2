@@ -1,0 +1,49 @@
+body {
+	/* for whole body of a webpage */
+	margin: 0;
+	padding: 0;
+	background-color: #738334;
+	/* background of the whole webpage */
+}
+
+.signup-container {
+	margin: 0 auto;
+	width: 50%;
+	/*width of the container*/
+	height: 700px;
+	/*height  of the container*/
+	margin-top: 30px;
+	border: 4px solid #f49c04;
+	/* inserting border */
+	padding-left: 40px;
+	/* spacing between the element border and content at left  */
+	border-radius: 40px;
+	/* for curvature of the border */
+	box-shadow: 5px 5px #eab354;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #eaeebf;
+	text-align: center;
+	text-decoration: none;
+	/* for removing the text-decoration */
+}
+
+input[type=text],
+input[type=password] {
+	width: 300px;
+	/* width of the input field */
+	height: 40px;
+	/* height of the input field*/
+	background-color: #d9dc5a;
+	/* background color of input field */
+	border-radius: 40px;
+	/* for curvature of the border */
+	padding-left: 20px;
+	/* spacing between the element border and content at left  */
+	border: 2px solid #f49c04;
+	/* insertion of border in input field */
+}
+
+input[type=radio] {
+	background-color: #f49c04;
+	/*background color for radio button */
+}

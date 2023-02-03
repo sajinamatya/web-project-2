@@ -1,0 +1,285 @@
+body {
+    background-color: #eeefe2;
+    overflow-x: hidden;
+    /* removes the overflows content from the element*/
+}
+
+/*navigation bar starts here*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 100px;
+    /* spacing between the element border and content at right  */
+    padding: 10px 50px;
+    /* spacing between the element border and content  */
+    display: flex;
+    /* implementation of flex box    */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    /* for the ordering of the stack overlap element on a page */
+
+}
+
+#logo {
+
+    width: 100px;
+
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 10px;
+    font-family: 'Yeon Sung', cursive;
+    ;
+    padding: 3px 15px;
+    /* spacing between the element border and content  */
+    color: #738334;
+
+}
+
+/* hover effect on anchor element */
+nav ul li a:hover {
+    border-bottom: 4px solid #f49c04;
+    transition-delay: 0.1s;
+}
+
+/* for active page  */
+nav ul li a.active {
+    color: #f49c04;
+}
+
+/* styling for login and signup button */
+.nav_right {
+    background-color: #f49c04;
+    border-radius: 40px;
+    /* for curvature of the end of the border*/
+    padding: 10px 20px;
+    /* spacing between the element border and content  */
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+    border: solid 5px #f49c04;
+
+}
+
+/* styling for anchor element of login and signup button */
+.nav_right a {
+    text-decoration: none;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 20px;
+    color: #333421;
+
+}
+
+/* hover effect  for login and signup button */
+.nav_right:hover {
+    background-color: #eeefe2;
+    transition-delay: 0.1s;
+
+}
+
+/* hover effect for anchor element of login and signup button */
+.nav_right:hover a {
+    color: #f49c04;
+}
+
+/*navigation bar ends here*/
+.top-section {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    /* for changing element postion relative to it actual position */
+}
+
+/* styling for vidoe section */
+.top-section video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    /* for the ordering of the stack overlap element on a page */
+}
+
+.top-section .caption {
+    z-index: 1;
+    /* for the ordering of the stack overlap element on a page */
+    position: relative;
+    /* for changing element postion relative to it actual position */
+    text-align: center;
+    padding: 30px;
+    /* spacing between the element border and content  */
+}
+
+.top-section .caption p {
+    color: #eeefe2;
+    font-size: 80px;
+    font-family: 'Yeon Sung', cursive;
+    margin-top: 400px;
+    /* spacing between the element border and body at top   */
+    margin-left: 100px;
+    /* spacing between the element border and body at left    */
+    margin-right: 100px;
+    /* spacing between the element border and body at right   */
+    border-bottom: 5px #f49c04 solid;
+}
+
+.research-intro {
+    margin-top: 200px;
+    /* spacing between the element border and body at top   */
+    margin-left: 10px;
+    /* spacing between the element border and body at left   */
+    margin-right: 10px;
+    /* spacing between the element border and body at right */
+    display: flex;
+    /* for implementation of flex box   */
+    height: 600px;
+}
+
+.research-intro div {
+    flex: 1;
+    margin: 20px;
+    height: 400px;
+    border-radius: 200px;
+    /* for curvature of the end of the border*/
+    padding: 20px 20px;
+    /* spacing between the element border and content  */
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    color: #738334;
+}
+
+.reference img {
+    width: 100%;
+}
+
+.reference-container {
+    height: 1200px;
+    display: flex;
+    /* for implementation of flex box   */
+    flex-direction: column;
+    background-color: #f49c04;
+    margin-top: -10px;
+}
+
+/* styling the table of reference container */
+.reference-container div table {
+    width: 100%;
+    height: 600px;
+    border: 10px solid #f49c04;
+    /* inserting border in the element content */
+}
+
+/* styling the table data of reference container */
+.reference-container div table td {
+
+    padding-left: 20px;
+    /* spacing between the element border and left  */
+    padding-right: 20px;
+    /* spacing between the element border and content at right  */
+}
+
+/* styling the table data image of reference container */
+.reference-container div table td img {
+    height: 300px;
+    width: 1200px;
+    padding-left: 50px;
+    /* spacing between the element border and content at left  */
+    padding-bottom: 20px;
+    /* spacing between the element border and content at bottom   */
+}
+
+/* styling content  */
+.content {
+    margin: 20px;
+    /* spacing between the element border and body  */
+    height: 500px;
+    padding: 20px;
+    /* spacing between the element border and content  */
+    border-radius: 50px;
+    /* for curvature of the end of the border*/
+    border-top: solid 5px #eeefe2;
+    color: #333421;
+    display: flex;
+}
+
+.refer-left,
+.refer-right {
+    flex: 1;
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    margin: 25px;
+    color: #424428;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #424428;
+    text-shadow: #eeefe2 3px 3px 15px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+/* styling for footer content of a webpage*/
+.footer-content {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(#333421, #4f6228);
+    border-top: 5px solid #4f6228;
+    /* inserting border at top of the element*/
+    display: flex;
+    /*implementation of a flex box */
+    flex-direction: row;
+    /* setting the direction of flex item to row */
+    flex-wrap: no-wrap;
+    /* for not wrapping the flex item  */
+
+}
+
+/* division of footer content */
+.footer-content div {
+    flex: 20%;
+    margin-left: 60px;
+    /* spacing between the element border and body at left */
+    font-family: 'Cabin', sans-serif;
+    padding-top: 40px;
+    /* spacing between the element border and content at top  */
+}
+
+/* anchor element of the footer content  */
+.footer-content div ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    color: #eeefe2;
+}
+
+/* hover effect */
+.footer-content div ul li a:hover {
+    color: #f49c04;
+}
+
+/* styling copyright section  */
+.copyright-part {
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #a6a822;
+    color: #333421;
+    overflow: hidden;
+    /* removes the overflows content from the element*/
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}

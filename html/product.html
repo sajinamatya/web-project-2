@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="product page ">
+    <meta name="product" content="Html">
+    <meta name="prashidika,Sajin,Richa,Nischal,Saurav" content="Islington">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--for responsiveness-->
+    <title>Product</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="../Fonts/yeonsung.css" rel="stylesheet"><!-- importing  font-->
+    <link href="../Fonts/Cabin&display.css" rel="stylesheet"><!-- importing  font-->
+    <!-- inline css  -->
+    <style>
+        .slider {
+            width: 86%;
+            height: 600px;
+            margin: 10px auto;
+            overflow: hidden;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 10px grey;
+            transition-duration: 1s;
+            top: 2px;
+        }
+
+        .img {
+            float: left;
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar starts here-->
+    <div class="logo">
+        <img src="../images/home-images/logo.png" alt="" style=" width: 100%;height: 100px;">
+    </div>
+    <nav class="center">
+        <ul class="navbar">
+            <li><a href="../index.html" class="nonactive">Home</a></li>
+            <li><a href="../html/blog.html" class="nonactive">Blog</a></li>
+            <li><a href="" class="active">Products</a></li>
+            <li><a href="../html/research.html">Research</a></li>
+            <li><a href="../html/About us.html">About Us</a></li>
+            <li><i class="fa fa-shopping-cart"
+                    style="top: 25px;right:20px;display: inline-block;position: absolute;font-size: 25px;cursor:pointer;"></i>
+            </li>
+            <li>
+                <div class="user"><i class="fa fa-user" style="cursor:pointer;"></i></div>
+            </li>
+        </ul>
+        <!--search box-->
+        <div>
+            <form class="search" action="action.page.php">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+    <!--creating a section including image slider-->
+    <div class="container">
+        <div class="centre-left">MYSTIC <br>BONSAI<br></div>
+        <div class="bottom-left">
+            Bonsai trees are miniatured,container<br> grown trees adhering to japanese traditions<br> and principles
+        </div>
+        <div class="bottom"><button class="button">Explore Now </button></div>
+
+        <div class="slider">
+            <div id="img">
+                <img src="../images/product-images/bonsai.jpg" />
+            </div>
+        </div>
+    </div>
+    <!--defining the javascript-->
+    <script>
+        //creating array of images
+        var image = ['../images/product-images/bonsai.jpg', '../images/product-images/bonsai2.jpg', '../images/product-images/bonsai10.jpg', '../images/product-images/bonsai12.jpg'];
+        setInterval(slider, 1500); //calling slider function
+        var imgs = document.getElementById('img');
+        var i = 1;
+        //creating slider function which is used to jump index in array
+        function slider() {
+            if (i < image.length) {
+                i = i + 1;
+            }
+            else {
+                i = 1;
+            }
+            imgs.innerHTML = "<img src=" + image[i - 1] + ">";
+        }
+    </script>
+    <!--creating another section-->
+    <div class="first-container">
+        <!--creating categories section which consist of a list of categories-->
+        <div class="categories">
+            <div class="header">
+                <h1>CATEGORIES</h1>
+            </div>
+            <div class="category">
+                <div class="image">
+                    <img src="../images/product-images/pexel.jpg" style="border-radius:100%;"><!-- inserting images-->
+                </div>
+                <div class="name">
+                    <h3>Indoor</h3>
+                </div>
+            </div>
+            <div class="category">
+                <!--creating section for product image-->
+                <div class="image">
+                    <img src="../images/product-images/B.jpg" style="border-radius:100%;"><!-- inserting images-->
+                </div>
+                <div class="name">
+                    <h3>Outdoor</h3>
+                </div>
+            </div>
+            <div class="category">
+                <div class="image">
+                    <img src="../images/product-images/flower.jpg" style="border-radius:100%;"><!-- inserting images-->
+                </div>
+                <div class="name">
+                    <h3>Flowering</h3>
+                </div>
+            </div>
+            <div class="category">
+                <div class="image">
+                    <img src="../images/product-images/bonsai3.jpg" style="border-radius:100%;"><!-- inserting images-->
+                </div>
+                <div class="name">
+                    <h3>Japanese</h3>
+                </div>
+            </div>
+            <!--products section which consist of list of products-->
+            <div class="products">
+                <div class="header">
+                    <h1>PRODUCTS</h1>
+                </div>
+                <!--creating cards with information of products-->
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/Banyan.png"></div><!-- inserting images-->
+                    <h2 class="title">Banyan</h2>
+                    <span class="price">$10 <del>$12</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/PINE.png"></div><!-- inserting images-->
+                    <h2 class="title">Pine</h2>
+                    <span class="price">$12 <del>$15</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/Oak.png"></div><!-- inserting images-->
+                    <h2 class="title">Oak</h2>
+                    <span class="price">$11 <del>$12</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/BODHI.png"></div><!-- inserting images-->
+                    <h2 class="title">bodhi Tree</h2>
+                    <span class="price">$12 <del>$14</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/Ginkgo.png"></div><!-- inserting images-->
+                    <h2 class="title">Ginkgo</h2>
+                    <span class="price">$9 <del>$10</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/boxwood.png"></div><!-- inserting images-->
+                    <h2 class="title">Boxwood</h2>
+                    <span class="price">$11 <del>$12</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/JapaneseMaple.png"></div>
+                    <!-- inserting images-->
+                    <h2 class="title">Japanese Maple</h2>
+                    <span class="price">$15 <del>$18</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/Olive.png"></div><!-- inserting images-->
+                    <h2 class="title">Olive</h2>
+                    <span class="price">$12 <del>$13</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/chinese elm.png"></div>
+                    <!-- inserting images-->
+                    <h2 class="title">Chinese elm</h2>
+                    <span class="price">$13 <del>$15</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/Moneytree.png"></div><!-- inserting images-->
+                    <h2 class="title">Money Tree</h2>
+                    <span class="price">$12 <del>$13.5</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/beech.png"></div><!-- inserting images-->
+                    <h2 class="title">Beech</h2>
+                    <span class="price">$12 <del>$13</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/pomegranate.png"></div>
+                    <!-- inserting images-->
+                    <h2 class="title">Pomegranate</h2>
+                    <span class="price">$13 <del>$15</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/crabapple.png"></div><!-- inserting images-->
+                    <h2 class="title">Crabapple</h2>
+                    <span class="price">$14 <del>$15</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/cedar.png"></div><!-- inserting images-->
+                    <h2 class="title">Himalayan Cedar</h2>
+                    <span class="price">$13 <del>$15</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/hibiscus.png"></div><!-- inserting images-->
+                    <h2 class="title">Hibiscus</h2>
+                    <span class="price">$10 <del>$11</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/azalea.png"></div><!-- inserting images-->
+                    <h2 class="title">Azalea</h2>
+                    <span class="price">$9 <del>$10</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/willow.png"></div><!-- inserting images-->
+                    <h2 class="title">Weeping Willow</h2>
+                    <span class="price">$10 <del>$11</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/bougainvillea.png"></div>
+                    <!-- inserting images-->
+                    <h2 class="title">Bougainvillea</h2>
+                    <span class="price">$10 <del>$11</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/juniper.png"></div><!-- inserting images-->
+                    <h2 class="title">Juniper</h2>
+                    <span class="price">$9 <del>$10</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images"><img src="../images/product-images/juniper.png"></div><!-- inserting images-->
+                    <h2 class="title">Juniper</h2>
+                    <span class="price">$9 <del>$10</del></span>
+                    <div class="star">
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star" style="color:#f49c04;"></i></a>
+                        <a href=""><i class="fas fa-star-half" style="color:#f49c04;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer content-->
+    <footer class="footer-content">
+
+        <div class="contact">
+            <ul style="color:white; list-style-type: none;"><br><br> <!-- Inline css -->
+                <li>Email : askdads@gmail.com</li><br>
+                <li>Phone : 01-21321,01-321321</li><br>
+                <li>Address : dsadsa</li><br>
+            </ul>
+        </div>
+        <!--contact us content-->
+        <div class="navigation-footer">
+            <!-- unorderlist-->
+            <ul style="color:aliceblue; list-style:none; text-align:left;"><br>
+                <h1 style="font-size:27px; font-family: 'Cabin',sans-serif; padding-bottom: 30px; color:aliceblue">
+                    Navigation</h1>
+                <li><a href="../index.html">Home</a></li><br>
+                <li><a href="./blog.html">Blog</a></li><br>
+                <li><a href="./product.html">Product</a></li><br>
+                <li><a href="./research.html">Research</a></li><br>
+                <li><a href="./About us.html">About us</a></li>
+            </ul>
+        </div>
+        <!--navigation content in footer -->
+        <div class="logo-social"> <br><br>
+            <h1
+                style="color:white; text-align:left; margin-left:10px;font-size:27px; font-family: 'Cabin',sans-serif; padding-bottom: 30px;">
+                Socials</h1>
+            <a href="#"><img src="../images/home-images/facebook logo.png" alt="facebook"></a>
+            <a href="#"><img src="../images/home-images/instagram logo.png" alt="instagram"></a>
+            <a href="#"><img src="../images/home-images/twitter logo.png" alt="twitter"></a>
+
+        </div><!-- social media link content in footer -->
+        <div>
+            <!--inserting image -->
+            <img src="../images/home-images/logo.png" alt="" style="width:100px; height: 100px;"> <!-- Inline css -->
+        </div>
+    </footer>
+    <!-- copyright section -->
+    <div class="copyright-part">
+        <p>&copy; copyright,Mystic Bonsai 2023</p>
+    </div>
+</body>
+
+</html>

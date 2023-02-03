@@ -1,0 +1,816 @@
+* {
+    margin: 0;
+    /* spacing between the element border and body set to zero  */
+    padding: 0;
+    /* spacing between the element border and content set to zero  */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    /*remove scrolling mechanism on x axis of a webpage*/
+    background: #eeefe2;
+    min-height: 100vh;
+    /* minimum height of the body */
+}
+
+/*navigation bar starts here*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    /* spacing between the element border and content  */
+    display: flex;
+    /*implementaion of flex box */
+    justify-content: space-between;
+    /* create space betweeen flex item */
+    align-items: center;
+    /* align the item on center*/
+    z-index: 1000;
+    /* for the ordering of the stack overlap element on a page */
+}
+
+#logo {
+    width: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    /*remove the styling on the list */
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /*remove underline from the item of anchor tag*/
+    font-size: 30px;
+    margin-left: 15px;
+    /* spacing between the element border and body at left  */
+    font-family: 'Yeon Sung', cursive;
+    ;
+    padding: 6px 15px;
+    /* for spacing between the border and item*/
+    color: #738334;
+    /*color of a font */
+}
+
+/* hover effect  */
+nav ul li a:hover {
+    border-bottom: 4px solid #f49c04;
+    /* inserting border at bottom of the item */
+    transition-delay: 0.1s;
+    /* background:#738334;
+color:#d9dc5a;
+transition-delay: 0.1s;*/
+}
+
+/* active page */
+nav ul li a.active {
+    color: #f49c04;
+}
+
+.nav_right {
+    background-color: #f49c04;
+    /* background color  */
+    border-radius: 40px;
+    /* for border curvature at each end side   */
+    padding: 10px 20px;
+    /* for spacing between the border and item*/
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+    border: solid 5px #f49c04;
+    /* insertion of border  */
+}
+
+.nav_right a {
+    text-decoration: none;
+    /*  for removing the underline in anchor element */
+    font-family: 'Yeon Sung', cursive;
+    font-size: 20px;
+    /* setting the font size    */
+    color: #333421;
+}
+
+/*  hover effect  */
+.nav_right:hover {
+    background-color: #eeefe2;
+    transition-delay: 0.1s;
+}
+
+/*  hover effect  */
+.nav_right:hover a {
+    color: #f49c04;
+}
+
+/*navigation bar ends here*/
+/* top section starts here*/
+.top-section {
+    position: relative;
+    /* for changing element postion relative to it actual position */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* for implementation of flex box   */
+    padding-left: 20px;
+    /* for spacing between the border and item on left side*/
+    margin-top: 150px;
+    /* for spacing between the top of  item border*/
+}
+
+.top-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    /* for the ordering of the stack overlap element on a page */
+}
+
+.top-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text1 {
+    padding-top: 700px;
+    /* for spacing between the border and item on top*/
+    padding-left: 60px;
+    /* for spacing between the border and item on left side*/
+    position: absolute;
+    color: #738334;
+    letter-spacing: 8px;
+    font-size: 40px;
+    font-family: 'Cabin', sans-serif;
+}
+
+#text2 {
+    position: absolute;
+    color: #f49c04;
+    padding-top: 600px;
+    /* for spacing between the border and item on top*/
+    padding-left: 1000px;
+    /* for spacing between the border and item on left side*/
+    font-weight: 200px;
+    /* for weight of the font */
+    font-size: 80px;
+    /* for size of the font */
+    font-family: 'Yeon Sung', cursive;
+}
+
+.first_alphabet {
+    color: #738334;
+    font-family: 'Yeon Sung', cursive;
+}
+
+/*section ends here*/
+/*section 2 starts*/
+.content-top-section {
+    height: 400px;
+    border-bottom-left-radius: 100px;
+    /* for border curvature on bottom left*/
+    border-bottom-right-radius: 100px;
+    /* for border curvature on bottom right */
+}
+
+#introduction {
+    height: 300px;
+    margin-top: 130px;
+    /* spacing between the element border and body at top */
+    padding-left: 60px;
+    /* for spacing between the border and item on left */
+    padding-right: 60px;
+    /* spacing between the element border and body at right  */
+    padding-bottom: 50px;
+    /* spacing between the element border and body at bottom*/
+    padding-top: 50px;
+    /* spacing between the element border and content at top */
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Cabin', sans-serif;
+    background-color: #4f6228;
+    /* background color of the content */
+    color: #eeefe2;
+    position: relative;
+}
+
+.top-products {
+    display: flex;
+    /* implementation of flex box    */
+    flex-direction: row;
+    /* flex item on direction row   */
+    width: 100%;
+    margin-bottom: 200px;
+    /* spacing between the element border and body at bottom */
+}
+
+.top-products h3 {
+    text-align: center;
+    /* for aligning the item at center */
+}
+
+.division-1 {
+    flex: 25%;
+    /* flex size on item   */
+    display: flex;
+    /* implementation of flex box    */
+    flex-direction: column;
+    /* flex item on direction colum    */
+    margin-left: 30px;
+    /* spacing between the element border and body at left */
+}
+
+.division-2 {
+    flex: 50%;
+    /* flex size on item    */
+    margin-right: 50px;
+    /* spacing between the element border and body at right */
+    margin-left: 50px;
+    /* spacing between the element border and body at left */
+    height: 550px;
+    margin-top: 100px;
+    /* spacing between the element border and body at top */
+    padding-left: 20px;
+    /* spacing between the element border and content at left */
+}
+
+.division-3 {
+    flex: 25%;
+    display: flex;
+    /* implementation of flex box    */
+    flex-direction: column;
+    /* flex item on direction colum    */
+    margin-right: 30px;
+    /* spacing between the element border and body at right */
+}
+
+.division-1 img,
+.division-3 img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    /* spacing between the element border and body at bottom */
+}
+
+.division-1 h3,
+.division-3 h3,
+.division-2 h3 {
+    color: #f49c04;
+    font-family: 'Cabin', sans-serif;
+    font-size: 25 px;
+    letter-spacing: 2px;
+    /* spacing between the letter of the content */
+}
+
+.division-2 img {
+    margin: 30px;
+    /* spacing between the element border and body */
+    margin-left: 60px;
+    /* spacing between the element border and body at left */
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    /* curvature of border on each end   */
+}
+
+.division-2 {
+    border: #f49c04 4px solid;
+    /*  insertion of border  */
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+
+}
+
+.division-1 div,
+.division-3 div {
+    border: #f49c04 4px solid;
+    /*  insertion of border  */
+    margin-bottom: 30px;
+    /* spacing between the element border and body at bottom  */
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+}
+
+/* hover effect  */
+.division-2:hover,
+.division-1 div:hover,
+.division-3 div:hover {
+    border: #738334 6px solid;
+    /*  insertion of border  */
+}
+
+/* hover effect  */
+.division-2:hover img,
+.division-1 div:hover img,
+.division-3 div:hover img {
+    transform: scale(0.8);
+}
+
+/* hover effect  */
+.division-2:hover h3,
+.division-1 div:hover h3,
+.division-3 div:hover h3 {
+    color: #4f6228;
+}
+
+.top-products-heading {
+    display: flex;
+    /* implementation of flex box    */
+    flex-direction: column;
+    /* flex item on direction column    */
+    margin-left: 300px;
+    /* spacing between the element border and body at left */
+    margin-right: 300px;
+    /* spacing between the element border and body at right  */
+    margin-bottom: 100px;
+    /* spacing between the element border and body at bottom */
+}
+
+.blog-content {
+    background-color: #f49c04;
+    /* backgroundcolor of the page  */
+    height: 600px;
+    /* height of the page */
+    position: relative;
+    /* for changing element postion relative to it actual position */
+    width: 100%;
+    display: flex;
+    /* implementation of flex box    */
+
+}
+
+/* hover effect  */
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+    transform: rotateY(180deg);
+    /* rotate 180 degree when hovered */
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    height: 450px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 60px;
+    /* curvature of border on each end   */
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+    /* transistion effect ease with 0.6s delay */
+}
+
+.front-card {
+    backface-visibility: hidden;
+    /* hide the back face mirror image of the content*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 60px;
+    /* curvature of border on each end   */
+    border-bottom: #eeefe2 8px solid;
+    /*  insertion of border  */
+    border-top: #eeefe2 8px solid;
+    /*  insertion of border on top   */
+}
+
+.front-card img {
+    width: 340px;
+    height: 400px;
+    margin-top: 10px;
+    border-radius: 30px;
+    /* curvature of border on each end   */
+}
+
+.front-card h2 {
+    font-size: 35px;
+    font-family: 'Yeon Sung', cursive;
+    color: #eeefe2;
+    text-shadow: #c3c796 10px 10px 20px;
+    margin-top: -200px;
+    /* space between the element border and body at top*/
+    text-align: center;
+    /* aligning the item to center */
+}
+
+.back-card {
+    backface-visibility: hidden;
+    /* hide the back face mirror image of the content*/
+    width: 100%;
+    height: 100%;
+    color: #eeefe2;
+    background-color: #4f6228;
+    /* background color of the content */
+    transform: rotateY(180deg);
+    /* rotate 180 degree when  */
+    position: absolute;
+    border-radius: 60px;
+    /* curvature of border on each end   */
+    border-bottom: #eeefe2 8px solid;
+    /*  insertion of border on bottom  */
+    border-top: #eeefe2 8px solid;
+    /*  insertion of border on top  */
+    padding: 20px;
+    /* space between the element border and content*/
+}
+
+.back-card p {
+    text-align: center;
+    /*aligning the item to cente */
+    font-size: 25px;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 25px;
+    /* space between the element border and body at top */
+}
+
+.research-content {
+    height: 800px;
+    /* height of the research-contnent */
+    background-color: #4f6228;
+    /* background color of research content*/
+    position: relative;
+    /* for changing element postion relative to it actual position */
+    width: 100%;
+    display: flex;
+    /* implementation of flex box    */
+    flex-direction: row;
+    /* flex item on direction row    */
+}
+
+.research-content div {
+    flex: 1;
+    height: 500px;
+    background-color: #eeefe2;
+    /* background color of research content*/
+    margin-right: 50px;
+    /* space between the element border and body at right*/
+}
+
+.research-content div div {
+    border-radius: 0px;
+    /* curvature of the border is none*/
+    margin-right: 0px;
+    /* space between the element border and body at right*/
+}
+
+.research-content div h3 {
+    color: #4f6228;
+    text-align: center;
+    /* align the item to the center*/
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 2px;
+    /* spacing between the letter   */
+    font-size: 30px;
+}
+
+/*copied content*/
+.footer-content {
+    /* styling for footer content of a webpage*/
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(#333421, #4f6228);
+    /* insertion of background image   */
+    border-top: 5px solid #4f6228;
+    display: flex;
+    /*implementation of a flex box */
+    flex-direction: row;
+    flex-wrap: no-wrap;
+}
+
+.footer-content div {
+    flex: 20%;
+    margin-left: 60px;
+    /* spacing between the element border and body  at left    */
+    font-family: 'Cabin', sans-serif;
+    padding-top: 50px;
+    /* spacing between the element border and content at top   */
+}
+
+.footer-content div ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    /* for removing the underline for the anchor element*/
+    font-family: 'Cabin', sans-serif;
+    color: #eeefe2;
+}
+
+/* hover effect */
+.footer-content div ul li a:hover {
+    color: #f49c04;
+}
+
+.copyright-part {
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #a6a822;
+    color: #333421;
+    overflow: hidden;
+    /* removes the overflows content from the element*/
+    text-align: center;
+    /* for aligning the text at center   */
+    padding-top: 15px;
+    /* spacing between the element border and content at top   */
+    font-family: 'Cabin', sans-serif;
+}
+
+.contact-form {
+    margin: 60px 0px 0px 60px;
+    width: 40%;
+    height: 750px;
+    border-bottom: #f49c04 8px solid;
+    border-left: 10px solid #f49c04;
+    padding-left: 30px;
+    /* spacing between the element border and content at left  */
+    border-radius: 80px;
+    /* for curvature of the end of the border*/
+    background-color: #bfc483;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#feedback-t {
+    width: 90%;
+    height: 200px;
+    border-style: none;
+    border-bottom: 4px #f49c04 solid;
+    /* inserting border at bottom of the element*/
+    border-left: 4px #f49c04 solid;
+    /* inserting border at left side  of the element*/
+    border-radius: 20px;
+    /* curvature of the border */
+    padding: 8px;
+    /* spacing between the element border and the content*/
+    font-size: 20px;
+}
+
+input[type=text] {
+    width: 90%;
+    height: 50px;
+    border-style: none;
+    border-bottom: 4px #f49c04 solid;
+    /* inserting border at bottom of the element*/
+    border-left: 4px #f49c04 solid;
+    /* inserting border at left side  of the element*/
+    background-color: #eeefe2;
+    font-size: 20px;
+    border-radius: 20px;
+    /* curvature of the border */
+    padding: 8px;
+}
+
+/* effect while focusing the input field */
+input[type=text]:focus {
+    background-color: #dbdc8e;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #4f6228;
+    color: #eeefe2;
+    border-style: none;
+    padding: 15px;
+    /* spacing between the element border and content    */
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+    font-size: 20px;
+    border-radius: 40px;
+    /* for curvature of border at each end side   */
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+/* hover effect  */
+input[type=submit]:hover {
+    background-color: #f49c04;
+    /* background color of the input field    */
+    color: #333421;
+}
+
+.logo-social img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-form h2,
+.contact-form label {
+    font-size: 30px;
+    font-family: 'Cabin', sans-serif;
+    color: #eeefe2;
+}
+
+.contact-form h2 {
+    padding-bottom: 30px;
+    /* spacing between the element border and content at bottom  */
+    padding-top: 30px;
+    /* spacing between the element border and content at top   */
+    padding-left: 80px;
+    /* spacing between the element border and content at left  */
+    letter-spacing: 5px;
+    /* spacing between the letter of the content   */
+    font-size: 45px;
+    color: #333421;
+    background-color: #f49c04;
+    /*background color of the content  */
+    margin-left: 60px;
+    /* spacing between the element border and body at left   */
+    margin-top: -60px;
+    /* spacing between the element border and body at top   */
+    margin-right: 100px;
+    /* spacing between the element border and body at right  */
+    border-radius: 60px;
+    /* curvature of the border at each end   */
+    font-family: 'Yeon Sung', cursives;
+}
+
+.contact-form {
+    background-color: #738334;
+    z-index: 10;
+    /* for the ordering of the stack overlap element on a page */
+    margin: 10px;
+    height: 60%;
+    /*height of the element    */
+    width: 50%;
+    /* width of the element    */
+    margin-left: 400px;
+    /* spacing between the element border and body  at left   */
+    margin-top: 100px;
+    /* spacing between the element border and body  at top   */
+    position: absolute;
+}
+
+.form-container {
+    width: 90%;
+    height: 1200px;
+    margin-bottom: 150px;
+    /* spacing between the element border and body  at bottom    */
+    position: relative;
+    /* for changing element postion relative to it actual position */
+}
+
+.form-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* implementation of flex box properties   */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#form-title {
+    font-size: 60px;
+    font-family: 'Yeon Sung', cursive;
+    color: #f49c04;
+    position: absolute;
+    padding-top: 2000px;
+    /* spacing between the element border and content at top  */
+    border-radius: 30px;
+    /* curvature border at each end side    */
+    margin-left: 450px;
+    /* spacing between the element border and body  at left    */
+    border-bottom: #4f6228 solid 10px;
+    /* insertion of border at bottom of the item */
+    padding-right: 30px;
+    /* spacing between the element border and content at right   */
+    padding-left: 30px;
+    /* spacing between the element border and content at left   */
+}
+
+.aboutUs {
+    display: flex;
+    /* for implementation of flex box properties*/
+    flex-direction: row;
+    /* align the flex item on row direction*/
+    margin-top: 450px;
+    /* spacing between the element border and body at top   */
+    margin-bottom: 50 px;
+    /* spacing between the element border and body at bottom  */
+    height: 1200px;
+}
+
+.aboutUs-description {
+    border-top-left-radius: 100px;
+    /* curvature of the boder at top left side */
+    border-bottom-left-radius: 100px;
+    /* curvature of the boder at bottom left side */
+    flex: 20%;
+    /* setting the flex percent of the element  */
+}
+
+.aboutUs-members {
+    flex: 80%;
+    /* setting the flex percent of the element  */
+    border-top-right-radius: 100px;
+    /* curvature of the boder at top right side */
+    border-bottom-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1,
+.row2,
+.row3 {
+    margin: 30px;
+    flex: 1;
+    display: flex;
+}
+
+.row1 {
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 40px;
+    border: 5px solid #eeefe2;
+}
+
+.row2 div,
+.row3 div {
+    flex: 1;
+    margin: 20px;
+    border-radius: 40px;
+    border: 5px solid #eeefe2;
+
+}
+
+.row1 p,
+.row2 p,
+.row3 p {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #333421;
+
+}
+
+.row1 img,
+.row2 img,
+.row3 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutUs-description h1 {
+    padding-top: 200px;
+    /* spacing between the element border and content at top  */
+    padding-left: 50px;
+    /* spacing between the element border and  content at left  */
+    font-size: 90px;
+    font-family: 'Yeon Sung', cursive;
+    color: #333421;
+    letter-spacing: 2px;
+}
+
+.redirect a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Yeon Sung', cursive;
+    color: #333421
+}
+
+.redirect {
+    background-color: #f49c04;
+    padding: 20px 20px;
+    border-radius: 50px;
+    border: 3px solid #f49c04;
+    /* inserting border in the element content */
+    margin-left: 1050px;
+}
+
+/* hover effect on anchor element  */
+.redirect:hover a {
+    color: #eeefe2;
+}
+
+/* hover effect  */
+.redirect:hover {
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+    background-color: #4f6228;
+    box-shadow: 5px 5px 30px #4f6228;
+    /* inserting shadow on container*/
+}
+
+.members-top img,
+.members-between img,
+.members-bottom img {
+    border-radius: 50px;
+    flex-shrink: 0;
+    height: 300px;
+    min-width: 100%;
+    margin-bottom: 30px;
+}

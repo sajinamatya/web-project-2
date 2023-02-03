@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="SignIn page ">
+    <meta name="Sign" content="Html">
+    <meta name="prashidika,Sajin,Richa,Nischal,Saurav" content="Islington">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for responsiveness of page-->
+    <title>SignIn page</title> <!-- title of the webpage -->
+    <!-- implementation of a internal css  -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #eaeebf;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 300px;
+            height: 40px;
+            background-color: #d9dc5a;
+            border-radius: 40px;
+            padding-left: 20px;
+            border: 2px solid #f49c04;
+        }
+
+        .signin-container {
+            display: flex;
+            /* for implementation of flex box   */
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 90%;
+            height: 650px;
+            border: 3px solid #f49c04;
+            /* inserting border in the element content */
+            padding: 0 auto;
+            border-radius: 40px;
+            box-shadow: 5px 5px #eab354;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaeebf;
+            text-align: center;
+        }
+
+        .container-1 {
+            flex: 50%;
+        }
+
+        .container-2 {
+            flex: 50%;
+            background-color: #b5ce52;
+            border-radius: 0 35px 35px 0;
+            background-image: url("../images/Loginpage-images/Bonsai.png");
+            /* for inserting background image   */
+            background-position: center bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- signin content section -->
+    <div class="signin-container">
+        <div class="container-1">
+            <form>
+                <h2 style="padding-top: 80px;color:#4f6228;">Log into bonsai</h2>
+                <!--heading with inline css-->
+                <!-- input field for email -->
+                <input type="text" placeholder="Email address" id="email" name="email">
+                <br><br> <!-- break line-->
+                <!-- input-field for password  -->
+                <input type="password" placeholder=" Password" id="pass" name="pass1">
+                <br><br>
+                <!-- button with connection to the function valid() -->
+                <button onclick="valid()" style="border: 2px solid #f49c04; width:330px; height:40px; border-radius:40px; padding:0 auto;
+background-color:#f49c04">
+                    <!--inline css -->
+                    Login
+                </button>
+                <br><br>
+                <!--break line -->
+                <span style="color:black; font-size:18px;"> Don't have an account?</span> <a href="SignUp page.html"
+                    style="text-decoration:none; color:blue; font-size:18px">Create Now!</a>
+            </form>
+        </div>
+        <div class="container-2">
+            <h1 style="font-size: 60px;  font-style:italic; color:#4f6228; ">Welcome to Bonsai</h1>
+        </div>
+    </div>
+    <!-- implementation of internal javascript on the webpage  -->
+    
+    <script type="text/javascript" src="../javascript/logIn.js"></script>
+</body>
+</html>

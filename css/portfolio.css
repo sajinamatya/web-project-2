@@ -1,0 +1,365 @@
+/* for whole body of a page*/
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eeefe2;
+    overflow-x: hidden;
+}
+
+/*navigation bar starts here*/
+/* styling the navigation bar  */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    /* spacing between the element border and content*/
+    display: flex;
+    /* implementation of flex box    */
+    justify-content: space-between;
+    /* for creating space between the flex conatiner*/
+    align-items: center;
+    z-index: 1000;
+    /* for the ordering of the stack overlap element on a page */
+
+}
+
+/* styling login and sign up button  */
+.nav_right {
+    background-color: #f49c04;
+    border-radius: 40px;
+    /* for curvature of the end of the border*/
+    padding: 10px 20px;
+    /* spacing between the element border and content*/
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+    border: solid 5px #f49c04;
+
+}
+
+/* styling an anchor element of  login and sign up button  */
+.nav_right a {
+    text-decoration: none;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 20px;
+    color: #333421;
+}
+
+/* hover effect for login and sign up button  */
+.nav_right:hover {
+    background-color: #eeefe2;
+    transition-delay: 0.1s;
+
+}
+
+/* hover effect for anchor element of login and sign up button   */
+.nav_right:hover a {
+    color: #f49c04;
+}
+
+/*navigation bar ends here*/
+/*  introduction section */
+.introduction {
+    display: flex;
+    /* for implementation of flex box   */
+    padding: 50px;
+    flex-direction: row;
+    height: 800px;
+    margin-top: 50px;
+}
+
+/* styling both overlay and division part of introduction section   */
+.introduction div img,
+.overlay {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    /* for curvature of the end of the border*/
+}
+
+/* styling the profile image  */
+.introduction div img {
+    margin-left: -200px;
+    margin-top: 50px;
+    border-right: 4px solid #f49c04;
+    border-bottom: 4px solid #f49c04;
+}
+
+/* styling the name section  */
+.name {
+    flex: 1;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+/* styling the paragraph portion of name section */
+.name p {
+    font-family: 'Cabin', sans-serif;
+    color: #f49c04;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* styling the heading of the name section */
+.name h1 {
+    font-size: 50px;
+    color: #4f6228;
+    font-family: 'Yeon Sung', cursive;
+    padding-top: 20px;
+    /* spacing between the element border and content at top */
+    letter-spacing: 3px;
+    text-align: center;
+    margin-left: 50px;
+    /* spacing between the element border and body at left side */
+    margin-right: 50px;
+    /* spacing between the element border and body at right  side */
+    border-bottom: 5px solid #f49c04;
+    /* inserting border at bottom of the heading   */
+    text-shadow: 5px 5px 20px #f49c04;
+    /* inserting the text shadow of heading */
+}
+
+/* Styling the education section content */
+.education h1 {
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 45px;
+    color: #4f6228;
+    text-shadow: 5px 5px 20px #f49c04;
+    border-bottom: #f49c04 4px solid;
+    margin-left: 250px;
+    /* spacing between the element border and body at left side */
+    margin-right: 250px;
+    /* spacing between the element border and body at right  side */
+    padding-bottom: 10px;
+}
+
+/* styling the education section table  */
+.education table {
+    margin-left: 300px;
+}
+
+/* stying  first table data  */
+.heading {
+    font-size: 30px;
+    font-family: 'Yeon Sung', cursive;
+    color: #333421;
+    padding: 20px;
+    border-bottom: 4px solid #f49c04;
+}
+
+/* stying third table data  */
+.heading3 {
+    font-size: 20px;
+    color: #333421;
+    font-family: 'Cabin', sans-serif;
+    padding: 20px;
+}
+
+/* stying  second table data  */
+.heading2 {
+    color: #4f6228;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* styling the heading of the experience section */
+.experience h1 {
+    font-size: 50px;
+    color: #4f6228;
+    font-family: 'Yeon Sung', cursive;
+    padding-top: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 5px solid #f49c04;
+    text-shadow: 5px 5px 20px #f49c04;
+}
+
+/* styling the experience section of the webpage  */
+.experience {
+    display: flex;
+    /* implementation of flex box    */
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* styling the container of the experience section  */
+.container {
+    display: flex;
+    /* for implementation of flex box   */
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+/* styling the child division work  */
+.work {
+    flex: 60%;
+    background-color: #4f6228;
+    height: 200px;
+    margin-right: 30px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+/* styling the child division year of experience section   */
+.year {
+    flex: 30%;
+    background-color: #84a347;
+    height: 200px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin-right: 50px;
+}
+
+/* styling the paragraph of the child division work of experience section  */
+.work p {
+    font-size: 30px;
+    color: #eeefe2;
+    padding-left: 90px;
+    /* spacing between the element border and content at left  */
+    font-family: 'Cabin', sans-serif;
+}
+
+/* styling the child division skill of experience section  */
+.skills {
+    margin: 20px;
+}
+
+/* styling the heading child division skill of experience section  */
+.skills h1 {
+    font-size: 50px;
+    color: #4f6228;
+    font-family: 'Yeon Sung', cursive;
+    padding-top: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 50px;
+    border-bottom: 5px solid #f49c04;
+    text-shadow: 5px 5px 20px #f49c04;
+}
+
+/* styling the detail-holder division of details section */
+.detail-holder {
+    display: flex;
+    /* implementation of flex box    */
+}
+
+/* styling the detail-holder division of details section */
+.detail-holder div {
+    flex: 1;
+    margin: 20px;
+    height: 300px;
+}
+
+/* styling the heading of  detail-holder division of details section */
+.details h1 {
+    font-size: 50px;
+    color: #4f6228;
+    font-family: 'Yeon Sung', cursive;
+    padding-top: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 50px;
+    border-bottom: 5px solid #f49c04;
+    text-shadow: 5px 5px 20px #f49c04;
+}
+
+/* styling skill-container division */
+.skill-container {
+    display: flex;
+    /* implementation of flex box    */
+    margin: 30px;
+}
+
+/* styling skill-container child division */
+.skill-container h3 {
+    margin-top: 100px;
+}
+
+.skill-container h3 {
+    margin-top: 100px;
+}
+
+.skill-container div {
+    margin: 20px;
+    flex: 1;
+    height: 300px;
+    border-radius: 60px;
+    /* for curvature of the end of the border*/
+    background-color: #e2a338;
+}
+
+.overlay {
+    background-color: #eeefe2;
+    border-top: 5px solid #f49c04;
+    border-left: 5px solid #f49c04;
+}
+
+/* styling the image child division of detail-holder */
+.detail-holder div img {
+    height: 150px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 80px;
+    /* for curvature of the end of the border*/
+}
+
+/* styling the heading of  child division of detail-holder */
+.detail-holder div h3 {
+    color: #333421;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* styling the title for contacts */
+.title {
+    font-size: 50px;
+    color: #4f6228;
+    font-family: 'Yeon Sung', cursive;
+    padding-top: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 50px;
+    border-bottom: 5px solid #f49c04;
+    text-shadow: 5px 5px 20px #f49c04;
+}
+
+/* styling the division of contacts section */
+.contacts div img {
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    /* for curvature of the end of the border*/
+}
+
+/* styling the heading for contact section */
+.contacts div h3 {
+    font-family: "Cabin", sans-serif;
+    color: #333421;
+    font-size: 25px;
+}
+
+/* setting the margin and padding left for contact section */
+.contacts {
+    margin: 50px;
+    padding-left: 200px;
+    /* spacing between the element border and content at left  */
+}
+
+/* styling the heading of the skill container division */
+.skill-container h3 {
+    color: #333421;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+}
