@@ -1,0 +1,249 @@
+/* for the whole body of a webpage  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    /*remove scrolling mechanism on x axis of a webpage*/
+}
+
+/* navigation starts here */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 100px;
+    padding: 10px 50px;
+    display: flex;
+    /* for the implentation of a flex-box*/
+    justify-content: space-between;
+    /* for creating space between the flex conatiner*/
+    align-items: center;
+    z-index: 1000;
+    /* for the ordering of the stack overlap element on a page */
+}
+
+/* logo of the webpage  */
+#logo {
+    width: 100px;
+}
+
+/* navigation bar unordered list item */
+nav ul li {
+    list-style: none;
+    /* for removing unnecessary styling in list */
+    display: inline-block;
+}
+
+/* navigation bar unordered list anchor element  */
+nav ul li a {
+    text-decoration: none;
+    /* for removing underline in the anchor element*/
+    font-size: 30px;
+    margin-left: 10px;
+    /* spacing between the element border and body at left  */
+    font-family: 'Yeon Sung', cursive;
+    ;
+    padding: 3px 15px;
+    color: #738334;
+}
+
+/* hover effect on a anchor element  */
+nav ul li a:hover {
+    border-bottom: 4px solid #f49c04;
+    /* inserting border at bottom only of the item */
+    transition-delay: 0.1s;
+    /* delay the transistion by 0.1 second */
+}
+
+/* active page of the webpage*/
+nav ul li a.active {
+    color: #f49c04;
+}
+
+/* styling login and sign up button  */
+.nav_right {
+    background-color: #f49c04;
+    /* background color of the page content*/
+    border-radius: 40px;
+    /* for curvature of the border at each end */
+    padding: 10px 20px;
+    /* spacing between the element border and content*/
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+    border: solid 5px #f49c04;
+    /* inserting border */
+}
+
+/* styling the anchor element of the login and sign up button */
+.nav_right a {
+    text-decoration: none;
+    /* for removing underline in the anchor element*/
+    font-family: 'Yeon Sung', cursive;
+    font-size: 20px;
+    color: #333421;
+}
+
+/* hover effect for login and sign up button  */
+.nav_right:hover {
+    background-color: #eeefe2;
+    transition-delay: 0.1s;
+    /* delay the transistion by 0.1 second */
+}
+
+/* hover effect for the anchor element of login and sign up button  */
+.nav_right:hover a {
+    color: #f49c04;
+}
+
+/* navigation-ends here*/
+/* first page of a blog  */
+.first-page {
+    width: 100%;
+    /* width  of the page content*/
+    height: 100vh;
+    /* height of the page content*/
+    overflow: hidden;
+    /* removes the overflows content from the element*/
+    overflow-x: hidden;
+    /*remove scrolling mechanism on x axis of a webpage*/
+    background-image: url(../images/blog-images/back-blog.jpeg);
+    /* for inserting background image */
+    background-color: #eeefe2;
+    background-attachment: fixed;
+    /* when scrolling the background image position would be fixed */
+    background-repeat: no-repeat;
+    /* reptition of background image is neglected */
+    background-size: 43%;
+}
+
+/* css implementation for second and fourth page  */
+.second-page,
+.four-page {
+    width: 100%;
+    /* width  of the page content*/
+    height: 230vh;
+    /* height of the page content*/
+    background-color: #9fae63;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    /* removes the overflows content from the element*/
+    overflow-x: hidden;
+    /*remove scrolling mechanism on x axis of a webpage*/
+}
+
+/* setting the height of the fourth page of the webpage  */
+.four-page {
+    height: 190vh;
+}
+
+/* blog content of second page  */
+.second-page>.blog-content {
+    height: 210vh;
+    /* height of the page content*/
+    margin-top: 150px;
+    /* spacing between the element border and body at top*/
+}
+
+/* content of the fourth page  */
+.four-page>.blog-content {
+    height: 185vh;
+}
+
+/* Css implementation for third,fifth, and sixth page  of a blog page */
+.third-page,
+.fifth-page,
+.sixth-page {
+    width: 100%;
+    /* width of the page */
+    height: 140vh;
+    /* height of the page */
+    background-color: #9fae63;
+    /*background color of the page*/
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    /*remove scrolling mechanism on x axis of a webpage*/
+}
+
+/* for the implementatation  flex box in third and fifth page */
+.third-page,
+.fifth-page {
+    display: flex;
+}
+
+/* content of third and fifth page where the margin and height is set  */
+.third-page>.blog-content,
+.fifth-page>.blog-content {
+    margin: auto 30px;
+    /* spacing between the element border and body*/
+    height: 550px
+        /* height of the page content */
+}
+
+/* heading of the webpage  */
+h1,
+h2 {
+    font-family: "Yeon Sung", cursive;
+    color: #4f6228;
+}
+
+/* content of sixth-page where the height is set  and direction of flex item is set to column*/
+.sixth-page>.blog-content {
+    flex-direction: column;
+    /* direction of the flex item to column */
+    height: 460px;
+}
+
+/* styling for footer content of a webpage*/
+.footer-content {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(#333421, #4f6228);
+    border-top: 5px solid #4f6228;
+    /* inserting border at top of the element*/
+    display: flex;
+    /*implementation of a flex box */
+    flex-direction: row;
+    /* setting the direction of flex item to row */
+    flex-wrap: no-wrap;
+    /* for not wrapping the flex item  */
+}
+
+/* division of footer content */
+.footer-content div {
+    flex: 20%;
+    margin-left: 60px;
+    /* spacing between the element border and body at left */
+    font-family: 'Cabin', sans-serif;
+    padding-top: 40px;
+    /* spacing between the element border and content at top  */
+}
+
+/* anchor element of the footer content  */
+.footer-content div ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    color: #eeefe2;
+}
+
+/* hover effect */
+.footer-content div ul li a:hover {
+    color: #f49c04;
+}
+
+/* styling copyright section  */
+.copyright-part {
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #a6a822;
+    color: #333421;
+    overflow: hidden;
+    /* removes the overflows content from the element*/
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}

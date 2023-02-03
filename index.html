@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="Home page ">
+    <meta name="Home" content="Html">
+    <meta name="prashidika,Sajin,Richa,Nischal,Saurav" content="Islington">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--for the resposiveness of a website-->
+    <title>Home</title> <!-- title of a webpage -->
+    <link href="css/main.css" rel="stylesheet">
+    <!--Use of a external css by linking external css file-->
+    <link href="../Fonts/yeonsung.css" rel="stylesheet"><!-- importing  font-->
+    <link href="../Fonts/Cabin&display.css" rel="stylesheet"><!-- importing  font-->
+</head>
+<!--beginning of the body of the webpage-->
+
+<body>
+    <header id="header">
+        <!--header of the wep page-->
+        <nav>
+            <!--nav stores the navigation links to other pages-->
+            <img src="images/home-images/logo.png" id="logo">
+            <!--inserting image of logo of website-->
+            <ul>
+                <!--creating unordered list for items of navigation bar-->
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="./html/blog.html">Blog</a></li>
+                <li><a href="./html/product.html">Product</a></li>
+                <li><a href="./html/research.html">Research</a></li>
+                <li><a href="./html/About us.html">About Us</a></li>
+            </ul>
+            <button class="nav_right" style="margin-left: 80px;"><a href="./html/SignIn page.html">Log In</a></button>
+            <!--Creating Log In button-->
+            <button class="nav_right"><a href="./html/SignUp page.html">Sign Up</a></button>
+            <!--Creating Sign Up button-->
+        </nav>
+    </header>
+    <!--header ends here-->
+    <section class="top-section">
+        <!--Creating a section for the top of webpage with class name top-section-->
+        <p id="text1">Welcome to</p>
+        <p id="text2">
+            <!--creating span with class first-alphabet to apply css property to only selected letter-->
+            <span class="first_alphabet">M</span>ystic<br>
+            <span class="first_alphabet">B</span>onsai
+        </p>
+        <img src="images/home-images/birdright.png" id="bird1">
+        <!--inserting image with id bird1-->
+        <img src="images/home-images/birdleft.png" id="bird2">
+        <!--inserting image with id bird2-->
+        <img src="images/home-images/bonsai backgrounds.png" id="background">
+        <!--inserting image with id background-->
+        <img src="images/home-images/waves green.png" id="waves" style=" width:100%; height: auto;">
+        <!--inserting image with id waves-->
+    </section>
+    <!--end of top-section-->
+    <!--Creating section with class name mid-section-->
+    <!--mid-section contains the introduction of website along with the top products, a little description
+        ,image of products and their name and price-->
+    <section class="mid-section">
+        <!--div with id introduction creates a division and contains the description of the website-->
+        <div id="introduction">
+            Mystic Bonsai<br> is a mystical shelter of carefully cultivated Bonsai trees of extraordinary
+            quality and vitality. We provide you with these trees in a timely manner, at a
+            competitive price, and of the highest quality. Reserve your bonsai plants today,
+            and we'll assist them grow in your house. To find out more, get in touch.
+        </div>
+
+        <!--div with class top-products-heading stores the title and description of top products-->
+        <div class="top-products-heading ">
+            <div style="                                    
+                        margin-left: 150px;
+                        margin-right: 150px;
+                        margin-bottom: 20px;
+                        margin-top: 250px;
+                        text-align: center;
+                        height: 120px;
+                        font-size: 80px;
+                        font-family: 'Yeon Sung', cursive;
+                        border-radius: 50px;
+                        color:#4f6228;
+                        border-left: 8px solid #f49c04;
+                        border-bottom: 10px solid #f49c04;">
+                <!--Stores the title-->
+                <!-- Use of a inline-css  -->
+                Top Products
+            </div>
+            <div style="font-size:25px;
+                        text-align: justify;
+                        font-family:'Cabin',sans-serif  ;
+                        color: #4f6228;">
+                <!--Stores the description-->
+                <!-- Use of a inline-css -->
+                The top products of this month with highest quality including most ordered bonsai trees available
+                at exclusive prices. Don't missout on this opportunity!
+            </div>
+        </div>
+        <!--end of div top-products-heading-->
+
+        <!--Creating division top-products to store image, price and name of top 5 bonsai products-->
+        <div class="top-products">
+            <!--Div top-products is further divided into three more divisions which are division-1, division-2
+            and division-3 -->
+            <div class="division-1">
+                <!--Creating division-1-->
+                <!--division-1 contains 2 more div that store the contents of two products-->
+                <div>
+                    <img src="./images/home-images/juniper.png">
+                    <h3 style="font-size: 30px;">Juniper</h3>
+                    <h3>Price: $9 </h3>
+                </div>
+                <div>
+                    <img src="./images/home-images/cedar.png">
+                    <h3 style="font-size: 30px;">Himalayan cedar</h3>
+                    <h3>Price: $ 13 </h3>
+                </div>
+            </div>
+
+            <div class="division-2">
+                <!--Creating division-2 -->
+                <!--division-2 stores the content of only one product-->
+                <img src="./images/home-images/JapaneseMaple.png">
+                <h3 style="font-size: 30px;">Japanese Maple</h3>
+                <h3>Price: $ 15</h3>
+            </div>
+
+            <div class="division-3">
+                <!--Creating division-3-->
+                <!--division-3 contains 2 more div that store the contents of two products-->
+                <div>
+                    <img src="./images/home-images/boxwood.png">
+                    <h3 style="font-size: 30px;">Boxwood</h3>
+                    <h3>Price: $ 11</h3>
+                </div>
+                <div>
+                    <img src="./images/home-images/chinese elm.png">
+                    <h3 style="font-size: 30px;">Chinese elm</h3>
+                    <h3>Price: $ 13</h3>
+                </div>
+            </div>
+        </div>
+        <!--end of division top-products-->
+    </section>
+    <!--end of section class mid-section-->
+    <!--Creating button that links to the products page-->
+    <button class="redirect"><a href="./html/product.html">Go to Products</a></button>
+    <section class="top-section" style="margin-top: 5px; height:50vh; position: relative;">
+        <!--Creating a section and assigning it class of top-section to use its css properties and this section
+        contains an image and a text-->
+        <h2 id="blog" style="padding-top: 650px;
+                                padding-left: 500px;
+                                font-size: 60px;
+                                font-family: 'Yeon Sung',cursive;
+                                color: #4f6228;
+                                position: absolute;">
+            <!--in-line css-->
+            Read Our Blog
+        </h2>
+        <img src="images/home-images/orange-wave.png">
+        <!--inserting image-->
+    </section>
+    <!--end od section-->
+    <!-- blog section -->
+    <div class="blog-content">
+        <div class="card-1" style="flex:1;">
+            <!--another div-->
+            <div class="front-card">
+                <img src="./images/home-images/Technology.png">
+                <h2>Technology</h2>
+            </div>
+            <div class="back-card">
+                <p>New tools, systems, and processes that facilitate
+                    easier, quicker, and more effective work canbe termed as technology.
+                    It must be developed, designed, and put into use. Many industries
+                    fall under the umbrella of technology. The evolvement of technology
+                    has revolutionized the entire globe.
+                </p>
+            </div>
+        </div>
+        <div class="card-2" style="flex:1;">
+            <!--inline css -->
+            <div class="front-card">
+                <img src="./images/home-images/bonsaiTechnology.png"><!-- inserting image -->
+                <h2>Bonsai Watering Technology</h2>
+            </div>
+            <div class="back-card">
+                <p>
+                    Unexpectedly, technology has modernized the process of
+                    cultivating plants, in our case Bonsai plants. The article focuses primarily on a
+                    technique that uses intelligent components to hydrate Bonsai plants automatically.
+                </p>
+            </div>
+        </div>
+        <div class="card-3" style="flex:1;">
+            <div class="front-card">
+                <img src="./images/home-images/impact.png"><!-- inserting image -->
+                <h2>Impacts</h2>
+            </div>
+            <div class="back-card">
+                <p>
+                    Technology is a double-edged sword. As a result, it has both beneficial and
+                    negative effects, with favorable effects clearly outweighing negative ones.
+                    The blog has an effect on selling bonsai plants as well.
+                </p>
+            </div>
+        </div>
+    </div>
+    <button class="redirect" style="margin-top: 100px;">
+        <!--inline css --><a href="./html/blog.html">Go to
+            Blog</a>
+    </button>
+    <!--end of blog section  -->
+    <!--Research section  -->
+    <section class="top-section" style="position: relative;">
+        <!--inline css -->
+        <h1 id="research" style="
+        font-size: 60px;
+        font-family: 'Yeon Sung',cursive;
+        color: #f49c04;
+        position: absolute;
+        margin-left:500px;
+        margin-right: 300px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        padding-right:20px;
+        padding-bottom: 10px;
+        margin-top:250px;
+        border-radius: 50px;
+        border-bottom: 8px solid #4f6228;
+        border-left: 8px solid #4f6228;">
+            <!--inline css -->
+            Our Research
+        </h1>
+        <p id="research-intro" style="position:absolute;
+        font-size:25px;
+        color:#4f6228;
+        text-align: justify;
+        margin-left: 200px;
+        margin-right: 200px;
+        font-family: 'Cabin',sans-serif;
+        padding-top: 400px;">
+            <!--inline css -->
+            Our research includes vising multiple webpages for the purpose of using it as a reference and
+            implementing it to our website; not entirely but selectively.
+        </p>
+        <img src="images/home-images/waves green.png">
+        <!--inserting image -->
+    </section>
+    <div class="research-content">
+        <div style="margin-left:50px; display:flex; flex-direction: column;">
+            <div style="flex:25%; padding-bottom: 20px; border-bottom: #4f6228 solid 5px;">
+                <!--inserting image -->
+                <img src="images/home-images/bulb.png" style="height:100px; width:100px;">
+                <!--inline css -->
+                <h3>Investigation</h3>
+            </div>
+            <div style="flex:75%; text-align: center; font-size: 20px; color: #4f6228; padding: 20px 20px;">
+                <!--inline css -->
+                <p>
+                    Browsing through several web pages on various websites in search of visually appealing
+                    designs and appropriate element placement and marking particular distinctive areas of
+                    several websites for examination.
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-left:50px; display:flex; flex-direction: column;">
+            <!--inline css -->
+            <div style="flex:25%; padding-bottom: 20px; border-bottom: #4f6228 solid 5px;">
+                <!--inline css -->
+                <!--inserting image -->
+                <img src="images/home-images/bulb.png" style="height:100px; width:100px;">
+                <!--inline css -->
+                <h3>Application</h3>
+            </div>
+            <div style="flex:75%; text-align: center; font-size: 20px; color: #4f6228; padding: 20px 20px;">
+                <!--inline css -->
+                <p>
+                    Creating specific portions of the website using the highlighted and linked
+                    content of several webpages and making websites that are responsive and aesthetically
+                    pleasing with the aid of the references used.
+                </p>
+
+            </div>
+        </div>
+        <div style="margin-left:50px; display:flex; flex-direction: column;">
+            <div style="flex:25%; padding-bottom: 20px; border-bottom: #4f6228 solid 5px;">
+                <!--inserting image -->
+                <img src="images/home-images/bulb.png" style="height:100px; width:100px;">
+                <h3>Distinct Changes</h3>
+            </div>
+            <div style="flex:75%; text-align: center; font-size: 20px; color: #4f6228; padding: 20px 20px;">
+                <!--inline css -->
+                <p>
+                    Even though the website's websites were built with the help of references, certain necessary
+                    alterations had to be made in order to maintain the design's originality.
+                </p>
+            </div>
+        </div>
+    </div>
+    <button class="redirect" style="margin-top: 50px;"><a href="./html/research.html">Go to
+            Research</a>
+        <!--hyperlink-->
+    </button>
+    <!--end of research section  -->
+    <!-- about us section -->
+    <section class="aboutUs">
+        <div class="aboutUs-description" style="background-color:#d9dc5a; padding-right: 150px;">
+            <h1 id="text">
+                Meet<br> Our<br> Team
+            </h1>
+        </div>
+        <div class="aboutUs-members" style="background-color:#a6a822;">
+            <div class="row1">
+                <div>
+                    <img src="./images/aboutUs-images/prashidika1.jpeg">
+                    <p>Hi, i am Prashidika</p>
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                    <img src="./images/aboutUs-images/Richa1.jpg">
+                    <p>Hi, i am Richa</p>
+                </div>
+                <div style="margin-right:80px;">
+                    <img src="./images/aboutUs-images/sajin1.jpeg">
+                    <p>Hi, i am Sajin</p>
+                </div>
+            </div>
+            <div class="row3">
+                <div>
+                    <img src="./images/aboutUs-images/nischal1.jpg">
+                    <p>Hi, i am Nischal</p>
+                </div>
+                <div style="margin-right:80px;">
+                    <img src="./images/aboutUs-images/saurav1.JPG">
+                    <p>Hi, i am Saurav</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="redirect" style="margin-top:50px;">
+        <!--inline css --><a href="./html/About us.html">Go to About
+            Us</a>
+    </button>
+    <!-- end of about us section -->
+    <section class="form" style="position:relative; margin-top: 500px;">
+        <!--inline css -->
+        <h2 id="form-title">Let's Get In Touch</h2>
+        <!-- contact us section  -->
+        <div class="form-container">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <label> Full name</label><br><br>
+                    <!--break line  -->
+                    <!--input field for name  -->
+                    <input type="text" name="fullname" placeholder="Enter your name"><br><br>
+                    <!--break line  -->
+                    <label> Email </label> <br><br>
+                    <!--input field for email -->
+                    <input type="text" name="fullname" placeholder="Enter your email"><br><br>
+                    <!--break line  -->
+                    <label>Message</label><br><br>
+                    <!-- input field for qureies -->
+                    <textarea id="feedback-t" name="feedback" placeholder=" Write some queries.."></textarea><br><br>
+                    <!--break line  -->
+                    <!--submit input type -->
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="form-image">
+                <div style="margin-right: 800px;"><img src="images/home-images/form-background.png">
+                    <!--inserting image -->
+                </div>
+                <div style="padding-top: 400px;"><img src="images/home-images/form-background.png"></div>
+            </div>
+        </div>
+    </section>
+    <!-- footer content  -->
+    <footer class="footer-content">
+
+        <div class="contact">
+            <ul style="color:white; list-style-type: none;">
+                <!--inline css --><br><br>
+                <!--breakline-->
+                <li>Email : mysticBonsai@gmail.com</li><br>
+                <li>Phone : 01-21321,01-321321</li><br>
+                <li>Address : Kathmandu, Nepal</li><br>
+            </ul>
+        </div>
+        <!--contact us content-->
+        <div class="navigation-footer">
+            <!--unorder list -->
+            <ul style="color:aliceblue; list-style:none; text-align:left;"><br>
+                <h1 style="font-size:27px; font-family: 'Cabin',sans-serif; padding-bottom: 30px;">Navigation</h1>
+                <li><a href="index.html">Home</a>
+                    <!--hyperlink-->
+                </li><br>
+                <li><a href="./html/blog.html">Blog</a>
+                    <!--hyperlink-->
+                </li><br>
+                <li><a href="./html/product.html">Product</a>
+                    <!--hyperlink-->
+                </li><br>
+                <li><a href="./html/research.html">Research</a>
+                    <!--hyperlink-->
+                </li><br>
+                <li><a href="./html/About us.html">About us</a>
+                    <!--hyperlink-->
+                </li>
+            </ul>
+        </div>
+        <!--navigation content in footer -->
+        <div class="logo-social"> <br><br>
+            <h1
+                style="color:white; text-align:left; margin-left:10px;font-size:27px; font-family: 'Cabin',sans-serif; padding-bottom: 30px;">
+                Socials</h1>
+            <a href="#"><img src="images/home-images/facebook logo.png" alt="facebook"></a>
+            <a href="#"><img src="images/home-images/instagram logo.png" alt="instagram"></a>
+            <a href="#"><img src="images/home-images/twitter logo.png" alt="twitter"></a>
+
+        </div><!-- social media link content in footer -->
+        <div>
+            <img src="images/home-images/logo.png" alt="" style="width:100px; height: 100px;">
+            <!--inserting image -->
+        </div>
+    </footer>
+    <!-- copyright section  -->
+    <div class="copyright-part">
+        <p>&copy; copyright,Mystic Bonsai 2023</p>
+    </div>
+    <!-- implmentation of javascript  -->
+    <script>
+        let text1 = document.getElementById('text1');
+        let text2 = document.getElementById('text2');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let background = document.getElementById('background');
+        let waves = document.getElementById('waves');
+        let introduction = document.getElementById('introduction');
+        let blog = document.getElementById('blog');
+        let formTitle = document.getElementById('form-title');
+        /*this function is created to get the scrollY and then alter the position
+        of the elements taken by id while scrolling*/
+        window.addEventListener("scroll", function () {
+            let value = window.scrollY;
+            text1.style.top = value * -0.2 + '%';
+            text2.style.top = value * -0.2 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            waves.style.top = value * -0.12 + 'px';
+            background.style.top = value * 0.25 + 'px';
+            header.style.top = value * -0.5 + 'px';
+            introduction.style.top = value * -0.1 + 'px';
+            blog.style.top = value * -0.2 + 'px';
+            formTitle.style.top = value * -0.3 + 'px';
+        })
+    </script>
+</body>
+
+</html>

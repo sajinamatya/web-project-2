@@ -1,0 +1,454 @@
+/*navigation bar starts here*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 100px;
+    /* for spacing between the border and item at right*/
+    padding: 10px 50px;
+    /* for spacing between the border and item*/
+    display: flex;
+    /* implementation of flex box    */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    /* for the ordering of the stack overlap element on a page */
+}
+
+#logo {
+    width: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    /* for removing unnecessary styling in list */
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* for removing underline in the anchor element*/
+    font-size: 30px;
+    /* setting the font size    */
+    margin-left: 10px;
+    font-family: 'Yeon Sung', cursive;
+    ;
+    padding: 3px 15px;
+    /* for spacing between the border and item*/
+    color: #738334;
+}
+
+/* hover effect on a anchor element  */
+nav ul li a:hover {
+    border-bottom: 4px solid #f49c04;
+    transition-delay: 0.1s;
+}
+
+/* active page of the webpage*/
+nav ul li a.active {
+    color: #f49c04;
+}
+
+.nav_right {
+    background-color: #f49c04;
+    border-radius: 40px;
+    /* for curvature of the end of the border*/
+    padding: 10px 20px;
+    /* for spacing between the border and item*/
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+    border: solid 5px #f49c04;
+
+}
+
+.nav_right a {
+    text-decoration: none;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 20px;
+    /* setting the font size    */
+    color: #333421;
+}
+
+/* hover effect  */
+.nav_right:hover {
+    background-color: #eeefe2;
+    transition-delay: 0.1s;
+    /* delay the transistion by 0.1 second */
+}
+
+.nav_right:hover a {
+    color: #f49c04;
+}
+
+/*navigation bar ends here*/
+.top-section {
+    width: 100%;
+    height: 200vh;
+    margin-top: -30px;
+    background-color: #f49c04;
+    margin-bottom: 100px;
+}
+
+.container1,
+.container2,
+.container3 {
+    display: flex;
+    /* implementation of flex box    */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    /* for spacing between the border and item*/
+}
+
+.container1 div,
+.container2 div,
+.container3 div {
+    flex: 1;
+    margin: 20px;
+    height: 400px;
+}
+
+.used {
+    border-radius: 200px;
+    /* for curvature of the end of the border*/
+    border: #4f6228 8px solid;
+    background-color: #eeefe2;
+    display: flex;
+    /* for implementation of flex box   */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+        /* removes the overflows content from the element*/
+}
+
+.used img {
+    border-radius: 200px;
+    /* for curvature of the end of the border*/
+    flex-shrink: 0;
+    height: 700px;
+    min-width: 100%;
+}
+
+/* hover effect */
+.used:hover {
+    cursor: pointer;
+    /* for displaying mouse cursor when pointing */
+    transform: scale(0.9);
+    transition-delay: 0.1s;
+    /* delay the transistion by 0.1 second */
+}
+
+.description h1 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 60px;
+    /* setting the font size    */
+    font-family: 'Yeon Sung', cursive;
+    color: #4f6228;
+    border-radius: 40px;
+    /* for curvature of the end of the border*/
+    border-bottom: #4f6228 4px solid;
+    text-shadow: #f49c04 10px 10px 20px;
+    /* for inserting shadow on text*/
+}
+
+.briefing {
+    display: flex;
+    /* for implementation of flex box */
+    width: 100%;
+    height: 150vh;
+    margin-top: 100px;
+    padding-left: 60px;
+    border-top: #f49c04 4px solid;
+    border-radius: 300px;
+}
+
+.side {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border: #656610 3px solid;
+    /* inserting border */
+
+}
+
+.side h1 {
+    text-align: center;
+    font-size: 40px;
+    /* setting the font size    */
+    color: #4f6228;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.main {
+    width: 500px;
+    height: 500px;
+    background-color: #656610;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    margin-left: -80px;
+    margin-right: -80px;
+    z-index: 2;
+    /* for the ordering of the stack overlap element on a page */
+}
+
+.main h1 {
+    color: #eeefe2;
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+    margin-top: 60px;
+    text-shadow: #f49c04 10px 10px 20px;
+    font-size: 60px;
+    /* setting the font size    */
+
+}
+
+.description {
+    display: flex;
+    /* for implementation of a flex box */
+    flex-direction: column;
+    /* the postion of flex item to column*/
+    height: 500px;
+}
+
+.description div {
+    margin-bottom: 60px;
+    height: 200px;
+    width: 900px;
+    background-color: #656610;
+    border-radius: 30px;
+    /* for curvature of the end of the border*/
+    padding: 30px;
+    /* for spacing between the border and item*/
+    font-size: 30px;
+    /* setting the font size    */
+    font-family: 'Cabin', sans-serif;
+    color: #eeefe2;
+    text-align: center;
+}
+
+.title {
+    color: #333421;
+    font-size: 80px;
+    /* setting the font size    */
+    font-family: 'Yeon Sung', cursive;
+    text-align: center;
+    text-shadow: 10px 10px 15px #eeefe2;
+    margin-top: -500px;
+}
+
+.footer-content {
+    /* styling for footer content of a webpage*/
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(#333421, #4f6228);
+
+    border-top: 5px solid #4f6228;
+    display: flex;
+    /*implementation of a flex box */
+    flex-direction: row;
+    flex-wrap: no-wrap;
+}
+
+.footer-content div {
+
+    flex: 20%;
+    margin-left: 60px;
+    font-family: 'Cabin', sans-serif;
+    padding-top: 50px;
+    /* for spacing between the border and item at top */
+}
+
+.footer-content div ul li a {
+    font-size: 20px;
+    /* setting the font size    */
+    text-decoration: none;
+    /* remove underline from the anchor element */
+    font-family: 'Cabin', sans-serif;
+    color: #eeefe2;
+}
+
+/* hover effect  */
+.footer-content div ul li a:hover {
+    color: #f49c04;
+}
+
+.copyright-part {
+    font-size: 20px;
+    /* setting the font size    */
+    width: 100%;
+    height: 50px;
+    background-color: #a6a822;
+    color: #333421;
+    overflow: hidden;
+    /* removes the overflows content from the element*/
+    text-align: center;
+    padding-top: 15px;
+    /* for spacing between the border and item at top */
+    font-family: 'Cabin', sans-serif;
+}
+
+.feedback-form {
+    margin: 60px 0px 0px 60px;
+    width: 40%;
+    height: 750px;
+    border-bottom: #f49c04 8px solid;
+    border-left: 10px solid #f49c04;
+    padding-left: 30px;
+    /* for spacing between the border and item at left */
+    border-radius: 80px;
+    /* for curvature of the end of the border*/
+    background-color: #bfc483;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#feedback-t {
+    width: 90%;
+    height: 100px;
+    border-style: none;
+    border-bottom: 4px #f49c04 solid;
+    border-left: 4px #f49c04 solid;
+    border-radius: 20px;
+    /* for curvature of the end of the border*/
+    padding: 8px;
+    /* for spacing between the border and item*/
+    font-size: 20px;
+    /* setting the font size    */
+}
+
+/* styling the input field  */
+input[type=text] {
+    width: 90%;
+    height: 50px;
+    border-style: none;
+    border-bottom: 4px #f49c04 solid;
+    border-left: 4px #f49c04 solid;
+    background-color: #eeefe2;
+    font-size: 20px;
+    border-radius: 20px;
+    /* setting the font size    */
+    padding: 8px;
+    /* for spacing between the border and item*/
+}
+
+/* styling the input field when focus  */
+input[type=text]:focus {
+    background-color: #dbdc8e;
+}
+
+/* styling the input field  */
+input[type=submit] {
+    width: 100px;
+    background-color: #4f6228;
+    color: #eeefe2;
+    border-style: none;
+    padding: 15px;
+    /* for spacing between the border and item*/
+    cursor: pointer;
+    font-size: 20px;
+    /* setting the font size    */
+    border-radius: 40px;
+    /* for curvature of the end of the border*/
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+/* hover effect  */
+input[type=submit]:hover {
+    background-color: #f49c04;
+    color: #333421;
+}
+
+.logo-social img {
+    width: 40px;
+    height: 40px;
+}
+
+.feedback-form h2,
+.feedback-form label {
+    font-size: 30px;
+    /* setting the font size    */
+    font-family: 'Cabin', sans-serif;
+    color: #eeefe2;
+}
+
+.feedback-form h2 {
+    padding-bottom: 30px;
+    /* for spacing between the border and item at bottom */
+    padding-top: 30px;
+    /* for spacing between the border and item at top */
+    padding-left: 80px;
+    /* for spacing between the border and item at left */
+    letter-spacing: 5px;
+    font-size: 45px;
+    /* setting the font size    */
+    color: #333421;
+    background-color: #f49c04;
+    margin-left: 60px;
+    /* for spacing between the border and body at left*/
+    margin-top: -60px;
+    /* for spacing between the border and body at top*/
+    margin-right: 100px;
+    /* for spacing between the border and body at right*/
+    border-radius: 60px;
+    /* for curvature of the end of the border*/
+    font-family: 'Yeon Sung', cursives;
+}
+
+.feedback {
+    width: 90%;
+    height: 1200px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.feedback-form {
+    background-color: #738334;
+    z-index: 10;
+    /* for the ordering of the stack overlap element on a page */
+    margin: 10px;
+    /* for spacing between the border and body */
+    height: 75%;
+    width: 50%;
+    margin-left: 400px;
+    /* for spacing between the border and body at left */
+    margin-top: 170px;
+    /* for spacing between the border and body at top */
+    position: absolute;
+}
+
+.stay {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+    background-color: #eeefe2;
+    border-top: 6px solid #f49c04;
+    color: #4f6228;
+    font-size: 50px;
+    height: 80px;
+    text-align: center;
+    border-radius: 100px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.shows {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    color: #f49c04;
+    font-size: 30px;
+    height: 80px;
+    text-align: center;
+    opacity: 1;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 100px;
+}
+
+.shows {
+    display: none;
+}
+
+.stay:hover+.shows {
+    display: block;
+}

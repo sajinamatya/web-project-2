@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="SignUp page ">
+  <meta name="SignUp" content="Html">
+  <meta name="prashidika,Sajin,Richa,Nischal,Saurav" content="Islington">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp page</title>
+  <link type="text/css" rel="stylesheet" href="../css/signup.css"> <!-- linking external css-->
+</head>
+
+<body>
+  <!-- signup content  -->
+  <div class="signup-container">
+    <h2>Create Account</h2>
+    <!-- creation of the form for signup -->
+    <form>
+      <!-- input field for first name  -->
+      <input type="text" placeholder="First Name" id="firstname" name="firstname"><br><br>
+      <!--break line -->
+      <!-- input field for last name  -->
+      <input type="text" placeholder="Last Name" id="lastname" name="lastname"><br><br>
+      <!--break line -->
+      <!-- input field for Email address -->
+      <input type="text" placeholder="Email address" id="email" name="email">
+      <br><br>
+      <!--break line -->
+      <!-- input field for new  password  -->
+      <input type="password" placeholder="New Password" id="pass1" name="pass1">
+      <br><br>
+      <!-- input field for confirm password  -->
+      <input type="password" placeholder="Confirm Password" id="pass2" name="pass2">
+      <br><br>
+      <!--break line -->
+
+      <b>Gender :</b>
+      <br>
+      <!-- radio button form the gender selection -->
+      <input type="radio" name="gender" value="male" checked>Male
+
+      <input type="radio" name="gender" value="female" checked>Female
+      <br><br>
+      <b>Date of birth</b>
+      <!-- Selection of date input field  -->
+      <input type="date">
+      <p>
+        <!-- submit button which all the  function valid() when clicked -->
+        <button onclick="valid()" style="border: 2px solid #f49c04; width:300px; height:40px; border-radius:40px;
+  background-color:#f49c04">Sign Up</button><br>
+        <!-- hyperlink to SignIn page -->
+        <a href="SignIn page.html" style="text-decoration: none; font-size:18px">Already have account?</a>
+      <h5> By clicking the signup form you will accept our terms and condition. </h5>
+    </form>
+  </div>
+  <!-- implementation of the internal javascript -->
+  <script>
+    /* function for the validation of the form where the input field is checked if it is blank
+      or not and same value for the new password and confirm password input field is entered of not */
+    function valid() {
+      // Storing the value of the input field element in their respective variable 
+      var Fname = document.getElementById("firstname").value;
+      var Lname = document.getElementById("lastname").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("pass1").value;
+      var Cpassword = document.getElementById("pass2").value;
+      // checking if the input field is blank or not 
+      if (Fname == "" && Lname == "" && email == "" && password == "" && Cpassword == "") {
+        alert("Incorrect formate please try again");
+      }
+      //checking if the new password and confirm password is same or not
+      else if (password !== Cpassword) {
+        alert("Please enter correct password");
+      }
+      else {
+        alert("Account created successfully");
+      }
+    }
+  </script>
+</body>
+
+</html>
